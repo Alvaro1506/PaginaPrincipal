@@ -1,0 +1,15 @@
+#globo-com {
+    color: rgb(18, 21, 182);
+    font-family: sans-serif;
+}
+.menu-list{
+    background-color: red;
+    height: 200px;
+    width: 100px;
+}
+body{
+    background-color: yellow;
+}
+a{
+    color: aliceblue;
+}

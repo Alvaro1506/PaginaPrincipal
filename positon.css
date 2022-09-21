@@ -1,0 +1,31 @@
+.facebook{
+    background-color: rgb(212, 212, 18);
+    height: 5000px;
+    display: grid;
+}
+#site1{
+    background-color: rgb(16, 91, 204);
+    position: fixed;
+    right: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    border-bottom: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    border: 2px dotted black;
+    
+}
+#site2{
+    background-color: rgb(20, 71, 238);
+    position: static;
+    height: 25px;
+}
+#site3{
+    background-color: rgb(214, 202, 202);
+    position: absolute;
+    left: 1100px ;
+    top: 10px;
+    
+}

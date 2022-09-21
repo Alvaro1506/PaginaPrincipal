@@ -1,0 +1,72 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#menu{
+    background-color: burlywood;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+    
+}
+#cinema{
+    background-color: rgb(224, 61, 61);
+    padding-left : 40px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin: 10px;
+    align-content: center;
+}
+img{
+    height: 500px;
+}
+#cinema:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+li:hover{ cursor: pointer;
+    
+}
+.formulario{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 10px;
+    padding: 17px;
+    align-content: center;
+    font-family: sans-serif;
+}
+form{
+    position: relative;
+    bottom: 350px;
+    left: 150px;
+    z-index: 1;
+}
+p{
+    text-align: center;
+}
+.entrar{
+    color: white;
+    background-color: rgb(31, 163, 180);
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+    border: none;
+    top: 5px;
+}
+.criar{
+    color: white;
+    background-color: rgb(17, 158, 59);
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    position: relative;
+    top: 13px;
+    border: none;
+}

@@ -1,0 +1,28 @@
+.c1{
+    background-color: rgb(250, 0, 0);
+    height: 50px;
+    width: 50px;
+
+}
+.c2{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+.c3{
+    background-color: aqua;
+    height: 50px;
+    width: 50px;
+}
+.c4{
+    background-color: darkgray;
+    height: 50px;
+    width: 50px;
+}
+.grid{
+    background-color: green;
+    width: 500px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
