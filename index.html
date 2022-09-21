@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="top-nav">
+    <div>
+      <a href=""><h1> Naique</h1></a>
+
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li><a href="camisa.html">Camisa</a></li>
+      <li><a href="calça.html">Calça</a></li>
+      <li><a href="bermuda.html">Bermuda</a></li>
+      <li><a href="acessorios.html">Acessorios</a></li>
+      <li><a href="tenis.html">Tenis</a></li>
+    </ul>
+  </section>
+
+<div class="imgens">
+    <h2>Promoção de camisa da seleçao brasileira </h2>
+    <h3>Venha não perde esse chance de compra a camisa do Brasil para a copa do mundo</h3>
+    <img src="camisa.png" alt="" id="imagens"> 
+</div>
+
+<script >
+class MobileNavbar{
+    constructor(menucenter,menu,navLinks){
+        this.menucenter = document.querySelector(menucenter);
+        this.menu = document.querySelector(menu);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+        this.handleClick = this.handleClick.bind(this);
+
+    }
+    addClickEvent(){
+        this.menucenter = document.addEventListener("click", this.handleClick);
+    }
+    handleClick(){
+        console.log(this);
+        this.menu.classList.toggle(this.activeClass);
+    }
+    init(){
+        if(this.menucenter){
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".menucenter",
+    ".menu",
+    ".menu li",
+
+);
+mobileNavbar.init();
+</script>
+</body>
+</html>
